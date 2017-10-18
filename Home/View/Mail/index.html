@@ -1,0 +1,218 @@
+<div class="box">
+    <div class="box-header">
+
+
+            <a href="#" class="btn btn-default" onclick="writeMail()"><i class="im-plus"></i> 写信</a>
+            <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+            <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+            <button type="button" class="btn btn-default btn-lrg ajax" title="刷新" onclick="refresh()">
+                <i class="fa fa-spin fa-refresh"></i>&nbsp; 刷新
+            </button>
+
+    </div>
+    <div class="box-body">
+
+        <table id="table" class="table table-bordered table-striped dataTable table-hover "></table>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    var table;
+    $(document).ready( function () {
+        table = $('#table').DataTable({
+            "ajax": {
+                "url": "__SELF__?type=data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "id",
+                    "title": "选中",
+                    "width": "5%",
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 17px;width: 17px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+
+                {"data": null, "title": "<i class='fa fa-envelope-o'></i>",  "width": "1%", "defaultContent": "","mRender":function (data,type,full) {
+                    if (full.mail_flag == 0){
+                        data = "<p class='text-black' title='未读'><i class='fa fa-envelope'></i></p>";
+                    }else{
+                        data = "<p class='text-gray'　title='已读'><i class='fa fa-envelope-o'></i></p>";
+                    }
+                    return data;
+
+
+                }},
+                {"data": "teacher_name", "title": "发件人",  "width": "10%","sClass": "text-center", "defaultContent": "","mRender":function (data,type,full) {
+                    if (full.mail_flag == 0){
+                        data = "<strong>"+data+"<small><"+full.teacher_id+"></small></strong>"
+                    }else{
+                        data = data+"<small><"+full.teacher_id+"></small>"
+                    }
+                    return data;
+
+                }},
+                {"data": "mail_title", "title": "主题",  "defaultContent": "","mRender":function (data,type,full) {
+                    var url = "__CONTROLLER__/mailInfo.html";
+                    if (full.mail_flag == 0){
+                        data = "<strong><a href="+url+"?flag=0&id="+full.id+" style='color: #0c0c0c'>"+data+"</a></strong>"
+                    }else{
+                        data = "<a href="+url+"?flag=1&id="+full.id+" style='color: #0c0c0c'>"+data+"</a>"
+                    }
+                    return data;
+s
+                }},
+                {
+                    "data": "mail_add_time", "title": "时间","width":"15%" ,"sClass": "text-center","defaultContent": "",
+                    "mRender": function (data, type, full) {
+                        var time = new Date(parseInt(data) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
+                        if (full.mail_flag == 0){
+                            time = "<strong>"+time+"</strong>"
+                        }
+                        return time;
+                    }
+                }
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项,",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table tbody").on("click","#info",function(){
+
+            var row=table.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+            window.open("{:U('Declare/timeLine')}?id="+id);
+        });
+
+        $("#table tbody").on("click","tr",function(){
+
+        });
+
+
+
+
+    });
+
+
+    function writeMail() {
+        self.open("{:U(sendMail)}")
+    }
+
+    function checkAll() {
+        $("input[name='box']").attr("checked","checked");
+    }
+
+    function deleteAll() {
+        var data="";
+        $("input[name='box']:checkbox:checked").each(function(){
+            data +=  $(this).val() + ',';
+        });
+        if (data == "") {
+            swal({
+                title: "错误!",
+                text: "未选中一项！",
+                type: "error",
+                confirmButtonText: "知道了"
+            });
+        } else {
+            data = data.substring(0, data.length - 1);
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "__SELF__?type=delete",
+                        type: 'post',
+                        dataType: 'text',
+                        data: {'data': data}
+                    })
+                        .done(function(msg) {
+                            if (msg == 1) {
+                                data = data.split(',');
+                                for (var i=0;i<data.length;i++) {
+                                    table.row( $("#"+data[i]).parents('tr') ).remove().draw();
+                                }
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+        }
+
+
+    }
+
+    function refresh() {
+        table.ajax.reload();
+    }
+
+
+
+
+
+
+</script>

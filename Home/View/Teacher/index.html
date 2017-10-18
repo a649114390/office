@@ -1,0 +1,354 @@
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">用户信息</h3>
+        <div style="float: right">
+            <a href="#" class="btn btn-default" onclick="showReimburse()"><i class="im-plus"></i> 添加</a>
+            <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+            <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+            <button type="button" class="btn btn-default btn-lrg ajax" title="刷新" onclick="refresh()">
+                <i class="fa fa-spin fa-refresh"></i>&nbsp; 刷新
+            </button>
+        </div>
+    </div>
+
+    <div class="box-body">
+
+        <div class="box-body" style="display: none" id="add_reimburse">
+            <form  method="post" name="form">
+                <input type="hidden" id="add_flag">
+                <table class="table table-bordered table-striped dataTable table-hover " >
+                    <thead>
+                    <tr>
+                        <td>姓名</td><td>性别</td><td>工号</td><td>职位</td><td>部门</td><td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder="姓名" name="teacher_name" id="teacher_name"></td>
+                        <td width="80">
+                            <select class="form-control" name="teacher_sex" id="teacher_sex">
+                                <option selected="selected">男</option>
+                                <option>女</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="form-control" name="teacher_id" placeholder="工号" id="teacher_id"></td>
+                        <td>
+                            <select class="form-control" name="teacher_job" id="teacher_job">
+                                <option selected="selected">教师</option>
+                                <option>负责人</option>
+                                <option>主任</option>
+                                <option>副主任</option>
+                                <option>领导</option>
+                            </select>
+                        </td>
+                        <td width="280">
+                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;"
+                                    tabindex="-1" aria-hidden="true" id="teacher_department" name="teacher_department">
+                                <foreach name="rule" item="v" key="k">
+                                    <option value="{$v.id}" >{$v.titles}</option>
+                                </foreach>
+                            </select>
+                        </td>
+                        <td>
+                            <button type='button' class='edit-btn fa fa-user-plus btn btn-primary' id="add_teacher">新建</button>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="box-body">
+            <table id="table" class="table table-bordered table-striped dataTable table-hover "></table>
+        </div>
+    </div>
+
+    <!-- /.box-body -->
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#teacher_department").select2({
+            theme: "bootstrap"
+        });
+
+    });
+
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    var table;
+    $(document).ready( function () {
+        table = $('#table').DataTable({
+            "ajax": {
+                "url": "__SELF__?type=data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "id",
+                    "title": "选中",
+                    "width": "5%",
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 18px;width: 18px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+                {"data": "teacher_name", "title": "姓名", "sClass": "text-center", "defaultContent": ""},
+                {"data": "teacher_id", "title": "教工号", "sClass": "text-center", "defaultContent": ""},
+                {"data": "teacher_sex", "title": "性别", "sClass": "text-center", "defaultContent": ""},
+                {"data": "teacher_job", "title": "职位", "sClass": "text-center", "defaultContent": ""},
+                {"data": "department", "title": "部门", "sClass": "text-center", "defaultContent": ""},
+                {
+                    "data": "add_time", "title": "时间","width":"15%" ,"sClass": "text-center","defaultContent": "",
+                    "mRender": function (data, type, full) {
+
+                        return new Date(parseInt(data) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
+                    }
+                },
+
+                {
+                    "data": '', "title": "操作", "sClass": "text-center", "defaultContent":
+                "<div class='btn-group'>"+
+                "<button type='button' class='edit-btn fa  fa-search-plus btn btn-info'  id='edit'>修改</button>"+
+                "<button type='button' class='delete-btn fa fa-trash-o btn btn-danger' style='margin-left: 5px' id='delete' >删除</button>"+
+                "</div>"
+
+
+                }
+
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table tbody").on("click","#edit",function(){
+            $('#add_reimburse').slideDown();
+            var row=table.row($(this).parents("tr"));
+            var data=row.data();
+            $('#add_flag').val(data['id']);
+            $('#teacher_id').val(data['teacher_id']);
+            $('#teacher_name').val(data['teacher_name']);
+            $('#teacher_sex').val(data['teacher_sex']);
+            $('#teacher_job').val(data['teacher_job']);
+            $("#teacher_department").select2({
+                theme: "bootstrap"
+            }).val(data['department_id']).trigger('change');
+            $('#add_teacher').text('修改')
+        });
+
+        $("#table tbody").on("click",".delete-btn",function(){
+
+            var row=table.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "{:U('Teacher/index')}?type=del",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {'data': id}
+                    })
+                        .done(function(msg) {
+                            if (msg === 1) {
+                                table.row( $("#"+id).parents('tr') ).remove().draw();
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+
+
+
+
+        });
+
+
+
+
+
+    });
+
+    function showReimburse() {
+        $('#add_reimburse').slideToggle('slow');
+        $('#add_teacher').text('新建');
+        $('#add_flag').val('');
+        $('#teacher_id').val('');
+        $('#teacher_name').val('');
+        $('#teacher_sex').val('男');
+        $('#teacher_job').val('教师');
+        $("#teacher_department").select2({
+            theme: "bootstrap"
+        }).val(data['1']).trigger('change');
+    }
+
+    $('#add_teacher').click(function () {
+        var flag = $('#add_flag').val();
+        $.ajax({
+            url:"__SELF__?type=edit&flag="+flag,
+            type:"post",
+            dataType:"json",
+            data:{'id':$('#teacher_id').val(),'name':$('#teacher_name').val(),'sex':$('#teacher_sex').val(),
+            'job':$('#teacher_job').val(),'depart':$("#teacher_department").val()}
+        })
+            .done(function (msg) {
+                if (msg === 1){
+                    table.ajax.reload();
+                    swal("成功", '操作成功！', "success");
+                }else if (msg === -1){
+                    swal({
+                        title: "错误!",
+                        text: "你没有修改",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }else if(msg === 0){
+                    swal({
+                        title: "错误!",
+                        text: "请检查输入数据的格式",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            })
+
+    });
+
+    function checkAll() {
+        $("input[name='box']").attr("checked","checked");
+    }
+
+
+    function deleteAll() {
+        var data="";
+        $("input[name='box']:checkbox:checked").each(function(){
+            data +=  $(this).val() + ',';
+        });
+        if (data == "") {
+            swal({
+                title: "错误!",
+                text: "未选中一项！",
+                type: "error",
+                confirmButtonText: "知道了"
+            });
+        } else {
+            data = data.substring(0, data.length - 1);
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "__SELF__?type=del",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {'data': data}
+                    })
+                        .done(function(msg) {
+                            if (msg === 1) {
+                                data = data.split(',');
+                                for (var i=0;i<data.length;i++) {
+                                    table.row( $("#"+data[i]).parents('tr') ).remove().draw();
+                                }
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+</script>

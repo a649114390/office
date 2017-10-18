@@ -1,0 +1,73 @@
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">站内信</h3>
+    </div>
+    <form action="__SELF__" method="post">
+        <div class="box-body">
+
+            <div class="form-group">
+                <label for="title">收件人</label><span><a id="sendAll" href="#">(我要群发)</a></span>
+                <input type="text" class="form-control" id="sendSingle" name="mail_id" onblur="tips()" width="60%" placeholder="输入收件人教工号" >
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;display: none" tabindex="-1" name="mail_ids" aria-hidden="true" >
+                    <option selected="selected">信息工程系群体员工</option>
+                    <option>材料工程系全体人员</option>
+                    <option>班公式全体人员</option>
+                </select>
+                <p class="text-green" style="display: none"><i class="fa fa-fw fa-check-circle"></i>可以发送</p>
+                <p class="text-red" style="display: none"><i class="fa fa-fw fa-times-circle"></i>不可以发送给自己</p>
+                <p class="text-red" style="display: none"><i class="fa fa-fw fa-times-circle"></i>查无此人</p>
+            </div>
+            <div class="form-group">
+                <label for="title">主题</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="输入标题">
+            </div>
+
+            <div id="myEditor" style="height: 300px;" name="content">
+                <p>请输入私信内容</p>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary">发送</button>
+        </div>
+    </form>
+    <!-- /.box-body -->
+</div>
+
+<script>
+
+    var um = UM.getEditor('myEditor');
+//    群发开关
+    $('#sendAll').click(function () {
+        $('#sendSingle').slideToggle('slow');
+        $('.select2').slideToggle('slow');
+    });
+    function tips() {
+        $('p').slideUp();
+        var id = $('#sendSingle').val();
+        if (id == ""){
+            $('.text-red:eq(0)').html('<i class="fa fa-fw fa-times-circle"></i>不能为空</p>');
+            $('.text-red:eq(0)').slideDown('slow');
+            $('#sendSingle').focus();
+        }else{
+            $.ajax({
+                url: "__SELF__?mail=recipient",
+                type:"post",
+                dataType: "json",
+                data: {'mail_recipient': id}
+            })
+                .done(function (msg) {
+                    if (msg == 1) {
+                        $('.text-green').slideDown('slow');
+                    } else if (msg == -1) {
+                        $('.text-red:eq(0)').slideDown('slow');
+                        $('#sendSingle').focus();
+                    } else if (msg == 0) {
+                        $('.text-red:eq(1)').slideDown('slow');
+                        $('#sendSingle').focus();
+                    }
+                });
+        }
+
+}
+
+</script>

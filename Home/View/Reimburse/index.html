@@ -1,0 +1,331 @@
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">我要报销</h3>
+        <div style="float: right">
+            <a href="#" class="btn btn-default" onclick="showReimburse()"><i class="im-plus"></i> 我要报销</a>
+            <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+            <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+            <button type="button" class="btn btn-default btn-lrg ajax" title="刷新" onclick="refresh()">
+                <i class="fa fa-spin fa-refresh"></i>&nbsp; 刷新
+            </button>
+        </div>
+    </div>
+
+        <div class="box-body">
+
+            <div class="box-body" style="display: none" id="add_reimburse">
+                <form action="{:U('Reimburse/index')}?type=form" method="post" enctype="multipart/form-data">
+                    <table class="table table-bordered table-striped dataTable table-hover " >
+                        <thead>
+                        <tr>
+                            <td>报销的项目</td><td>用途</td><td>金额</td><td>简要说明</td><td>附件</td><td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" placeholder="项目名称" name="reimburse_name" id="reimburse_name"></td>
+                            <td><input type="text" class="form-control" placeholder="用途" name="reimburse_use" id="reimburse_use"></td>
+                            <td width="100px">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="reimburse_money" id="reimburse_money">
+                                    <span class="input-group-addon">元</span>
+                                </div>
+                            <td><input type="text" class="form-control" placeholder="简要说明" name="reimburse_info" id="reimburse_info"></td>
+                            <td width="120px"><input type="file" id="exampleInputFile" name="file"></td>
+                            <td><button type='submit' class='edit-btn fa fa-user-plus btn btn-primary'  >新建</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="box-body">
+                <table id="table" class="table table-bordered table-striped dataTable table-hover "></table>
+            </div>
+
+        </div>
+
+    <!-- /.box-body -->
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    var table;
+    $(document).ready( function () {
+        table = $('#table').DataTable({
+            "ajax": {
+                "url": "{:U('Reimburse/index')}?type=data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "id",
+                    "title": "选中",
+                    "width": "5%",
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 18px;width: 18px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+                {"data": "reimburse_name", "title": "报销的项目", "sClass": "text-center", "defaultContent": ""},
+                {"data": "teacher_name", "title": "报销人", "sClass": "text-center", "defaultContent": ""},
+                {
+                    "data": "add_time", "title": "时间","width":"15%" ,"sClass": "text-center","defaultContent": "",
+                    "mRender": function (data, type, full) {
+                        return new Date(parseInt(data) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
+                    }
+                },
+                {
+                    "data": 'reimburse_state',
+                    "title": "进度",
+                    "sClass": "text-center",
+                    "defaultContent": "",
+                    "mRender": function (data, type, full) {
+                        var progress='';
+                        if (data == 0 ){
+                            data = '未评审';
+                        }else if(data == -1){
+                            data = '被驳回';
+                        } else{
+                            if (full.reimburse_money <= 20000){
+                                if (data == 1){
+                                    var title = '部门负责人已审核';
+                                    progress=33;
+                                }else if(data == 2){
+                                    var title = '财务已审核';
+                                    progress=66;
+                                }else if(data == 3){
+                                    var title = '分管领导已审核,报销通过';
+                                    progress=100;
+                                }
+                            }else{
+                                if (data == 1){
+                                    var title = '部门负责人已审核';
+                                }else if(data == 2){
+                                    var title = '财务已审核';
+                                }else if(data == 3){
+                                    var title = '分管领导已审核';
+                                }else if (data == 4){
+                                    var title = '主管领导已审核,报销通过!'
+                                }
+                                progress = data * 25;
+                            }
+
+                            data ='<a href="www.baidu.com">' +
+                                '<div class="progress progress-xs progress-striped active" title="'+title+'">' +
+                                '<div class="progress-bar progress-bar-primary" style="width:' + (progress) + '%"></div>' +
+                                '</div></a>';
+                        }
+                        return data;
+                    }
+                },
+                {
+                    "data": "reimburse_attachment",
+                    "title": "附件",
+                    "sClass": "text-center",
+                    "defaultContent": "",
+                    "mRender": function (data, type, full) {
+                        if(data){
+                            data = "有";
+                        }else{
+                            data = "无";
+                        }
+                        return data;
+                    }
+                },
+                {
+                    "data": 'reimburse_state', "title": "操作", "sClass": "text-center", "defaultContent":"",
+                    "mRender": function (data, type, full) {
+                        if ({$Think.session.teacher_level}-1 <=  data){
+                            data = 'disabled title="你已评审"';
+                            var fail = 'disabled title="已通过,无法驳回"';
+                        }else if (data == -1){
+                            data ='disabled title="已被驳回"';
+                            var fail = 'disabled title="不要重复驳回"';
+                        }else if(full.teacher_id == {$Think.session.teacher_id}){
+                            data ='disabled title="无法审核自己的申请"';
+                            var fail = 'disabled title="不可以驳回自己的申请"';
+                        }else{
+                            data = '';
+                        }
+                        return   "<div class='btn-group'>" +
+                            "<button type='button' class='edit-btn fa fa-search-plus btn btn-info'  id='info'>详细</button>" +
+                            <eq name="btn_flag" value='true'>
+                            "<button type='button' class='edit-btn fa fa-mail-forward btn btn-success'  id='check' style='margin-left: 5px' "+
+                            " "+data+">通过</button>" +
+                            "<button type='button' class='delete-btn fa fa-reply-all btn btn-danger' id='fail' style='margin-left: 5px' "+
+                            ""+fail+">驳回</button>" +
+                            </eq>
+                        "</div>";
+                    }
+
+                }
+
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table tbody").on("click","#info",function(){
+
+            var row=table.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+            window.open("{:U('reimburse/timeLine')}?id="+id);
+        });
+
+        $("#table tbody").on("click","#check",function(){
+
+            var row=table.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+
+
+
+            $.ajax({
+                url:"{:U('Reimburse/index')}?type=check",
+                type:"post",
+                dataType:"text",
+                data:{'check_data':id}
+            })
+                .done(function (msg) {
+                    if (msg == 0){
+                        swal({
+                            title: "错误!",
+                            text: "服务器未正常响应，请重试",
+                            type: "error",
+                            confirmButtonText: "知道了"
+                        });
+                    }else{
+                        table.ajax.reload();
+                        swal("成功", '操作成功！', "success");
+                    }
+                })
+                .fail(function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应,请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                });
+
+        });
+
+        $("#table tbody").on("click","#fail",function() {
+
+            var row = table.row($(this).parents("tr"));
+            var data = row.data();
+            var id = data['id'];
+            var reason = '';
+            swal({
+                    title: "驳回",
+                    text: "根据规定，您必须输入驳回理由",
+                    type: "input",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: "slide-from-top",
+                    inputPlaceholder: "驳回理由"
+                },
+                function (inputValue) {
+                    if (inputValue === false) return false;
+
+                    if (inputValue === "") {
+                        swal.showInputError("理由不能为空");
+                        return false
+                    }
+                    reason = inputValue;
+                    $.ajax({
+                        url:"{:U('Reimburse/index')}?type=fail",
+                        type:"post",
+                        dataType:"text",
+                        data:{'fail_data':id,'fail_reason':reason}
+
+                    })
+                        .done(function (msg) {
+                            if (msg == 0){
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }else{
+                                table.ajax.reload();
+                                swal("成功", '操作成功！', "success");
+                            }
+                        })
+                        .fail(function () {
+                            console.log('fail');
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应,请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+
+
+        });
+
+
+
+    });
+
+    function showReimburse() {
+        $('#add_reimburse').slideToggle('slow');
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>

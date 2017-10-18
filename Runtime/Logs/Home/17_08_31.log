@@ -1,0 +1,1310 @@
+[ 2017-08-31T09:52:04+08:00 ] 127.0.0.1 /office/index.php/Home/Student/stu_info.html
+ERR: 无法加载控制器:Student
+
+[ 2017-08-31T09:52:07+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-31T10:00:55+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0008s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_declare.teacher_id = 1128 ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0016s ]
+
+[ 2017-08-31T10:01:30+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2017-08-31T10:14:28+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-08-31T10:46:53+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+
+[ 2017-08-31T10:47:23+08:00 ] 127.0.0.1 /office/index.php/Home/Student/stu_info.html
+ERR: 无法加载控制器:Student
+
+[ 2017-08-31T10:47:27+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2017-08-31T11:05:45+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0005s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_declare.teacher_id = 1128 ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-08-31T11:11:00+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-08-31T11:12:20+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0005s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_declare.teacher_id = 1128 ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-08-31T11:21:12+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-08-31T11:23:45+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-08-31T11:54:48+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-31T14:50:22+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/f1c0e02b6b6d11806a28d6c812e7f559.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2017-08-31T14:50:35+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-08-31T14:50:47+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-08-31T14:51:38+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001367s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-31T14:54:50+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-08-31T14:54:50+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-08-31T14:55:11+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001589s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2017-08-31T14:55:14+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail_id=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-08-31T15:39:11+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-08-31T15:39:14+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0180s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-08-31T15:39:21+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail=recipient&mail_recipient=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0160s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-31T15:39:22+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail?mail=recipient&mail_recipient=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2017-08-31T15:39:55+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-08-31T15:39:56+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0225s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2017-08-31T15:40:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-08-31T15:43:11+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-08-31T15:43:15+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2017-08-31T15:44:13+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0238s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2017-08-31T15:45:56+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0022s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-08-31T15:46:03+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=110d
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-08-31T15:46:09+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1102132132
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/b09b0b003c7c2fb8ad047cfb57b97253.php 第 285 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-08-31T15:47:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.3111s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0210s ]
+
+[ 2017-08-31T15:47:07+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0027s ]
+
+[ 2017-08-31T15:47:15+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1100
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0128s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-31T15:47:19+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1100
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:56:18+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0018s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:56:30+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=110
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0072s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0029s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T15:56:33+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0134s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T15:56:40+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=11280
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0099s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:03:30+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0156s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:03:36+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0066s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-31T16:03:39+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0103s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:03:40+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-31T16:04:10+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-31T16:04:17+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-31T16:04:18+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-31T16:05:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0752s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-08-31T16:05:51+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:06:06+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=%EF%BC%91%EF%BC%91
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:06:52+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0082s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-31T16:07:20+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:07:22+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0491s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:07:26+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:07:46+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2017-08-31T16:07:56+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:09:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-31T16:09:21+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0117s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:09:27+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:09:27+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1128
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:09:41+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0148s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-31T16:09:44+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:10:17+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:10:19+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0032s ]
+
+[ 2017-08-31T16:10:20+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0017s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:10:25+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:10:26+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:10:33+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=666
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0107s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:11:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=00
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0617s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2017-08-31T16:11:16+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=2132
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:12:47+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient&mail_recipient=1104
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:14:16+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:14:40+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=123456 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:14:45+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+
+[ 2017-08-31T16:14:58+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0087s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:17:05+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0161s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:17:10+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:22:15+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:22:50+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1132 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-31T16:22:53+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0109s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0109s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1132 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:25:46+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0145s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-31T16:32:20+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0149s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0017s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-08-31T16:51:18+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html
+ERR: Function name must be a string
+
+[ 2017-08-31T16:52:16+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html
+ERR: 1366:Incorrect string value: '\xE7\x94\xB3\xE8\xAF\xB7...' for column 'mail_title' at row 1
+ [ SQL语句 ] : INSERT INTO `xs_mail` (`mail_from_id`,`mail_to_id`,`mail_add_time`,`mail_title`,`mail_content`) VALUES ('1128','0','1504169536','申请失败是事','<p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">今天遇见这么一个小小的问题，就是文本框中需要输入内容才可以提交，如果没有输入就提示并使该文本框获得焦点！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这么一个简单的事情如果没有使用jQuery的话 是不是对象.focus()就可以了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">可是当我们使用了jQuery 这样$(&quot;#nameInput&quot;) 返回的就不是DOM对象了而是jQuery对象，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这样的话$(&quot;#nameInput&quot;).focus()这个方法的意义也就变了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">并不是使这个文本框获得焦点 而是触发这个文本框所有绑定在onfocus的函数！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">其实使用jQuery也非常简单将jQuery对象转化为一个DOM对象，这一点相信开发人员早就考虑到了，诶 真是先天下之忧而忧啊</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px; line-height: 1.8; color: red;\">$(&quot;#nameInput&quot;)[0].focus() 简单的加一个[0] 便是我们想要的了！！</span></p><p style=\"display: none;\">请输入私信内容</p>')
+
+[ 2017-08-31T16:56:08+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html
+ERR: 1366:Incorrect string value: '\xE7\x94\xB3\xE8\xAF\xB7...' for column 'mail_title' at row 1
+ [ SQL语句 ] : INSERT INTO `xs_mail` (`mail_from_id`,`mail_to_id`,`mail_add_time`,`mail_title`,`mail_content`) VALUES ('1128','0','1504169768','申请失败是事','<p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">今天遇见这么一个小小的问题，就是文本框中需要输入内容才可以提交，如果没有输入就提示并使该文本框获得焦点！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这么一个简单的事情如果没有使用jQuery的话 是不是对象.focus()就可以了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">可是当我们使用了jQuery 这样$(&quot;#nameInput&quot;) 返回的就不是DOM对象了而是jQuery对象，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这样的话$(&quot;#nameInput&quot;).focus()这个方法的意义也就变了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">并不是使这个文本框获得焦点 而是触发这个文本框所有绑定在onfocus的函数！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">其实使用jQuery也非常简单将jQuery对象转化为一个DOM对象，这一点相信开发人员早就考虑到了，诶 真是先天下之忧而忧啊</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px; line-height: 1.8; color: red;\">$(&quot;#nameInput&quot;)[0].focus() 简单的加一个[0] 便是我们想要的了！！</span></p>')
+
+[ 2017-08-31T16:56:20+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0116s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1104 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-31T16:56:40+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html
+ERR: 1366:Incorrect string value: '\xE5\x85\xB3\xE4\xBA\x8E...' for column 'mail_title' at row 1
+ [ SQL语句 ] : INSERT INTO `xs_mail` (`mail_from_id`,`mail_to_id`,`mail_add_time`,`mail_title`,`mail_content`) VALUES ('1128','1104','1504169800','关于申请的事','<p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">今天遇见这么一个小小的问题，就是文本框中需要输入内容才可以提交，如果没有输入就提示并使该文本框获得焦点！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这么一个简单的事情如果没有使用jQuery的话 是不是对象.focus()就可以了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">可是当我们使用了jQuery 这样$(&quot;#nameInput&quot;) 返回的就不是DOM对象了而是jQuery对象，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">这样的话$(&quot;#nameInput&quot;).focus()这个方法的意义也就变了，</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">并不是使这个文本框获得焦点 而是触发这个文本框所有绑定在onfocus的函数！</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\">其实使用jQuery也非常简单将jQuery对象转化为一个DOM对象，这一点相信开发人员早就考虑到了，诶 真是先天下之忧而忧啊</p><p style=\"margin: 10px auto; padding: 0px; font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px; line-height: 1.8; color: red;\">$(&quot;#nameInput&quot;)[0].focus() 简单的加一个[0] 便是我们想要的了！！</span></p><p style=\"display: none;\">请输入私信内容</p>')
+
+[ 2017-08-31T16:58:52+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1111 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-31T16:59:26+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0104s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+

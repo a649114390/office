@@ -1,0 +1,325 @@
+[ 2017-10-11T14:25:41+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0081s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xs_teacher` INNER JOIN xs_teacher_department d on xs_teacher.teacher_department=d.department_id    [ RunTime:0.0006s ]
+
+[ 2017-10-11T14:25:46+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0066s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0010s ]
+SQL: DELETE FROM `xs_teacher` WHERE `id` = 27 [ RunTime:0.0962s ]
+
+[ 2017-10-11T14:25:49+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0024s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0007s ]
+SQL: DELETE FROM `xs_teacher` WHERE `id` = 26 [ RunTime:0.0452s ]
+
+[ 2017-10-11T14:25:55+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0006s ]
+SQL: DELETE FROM `xs_teacher` WHERE `id` = 21 [ RunTime:0.0328s ]
+
+[ 2017-10-11T14:26:00+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0025s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0024s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0124s ]
+SQL: DELETE FROM `xs_teacher` WHERE `id` = 25 [ RunTime:0.0401s ]
+
+[ 2017-10-11T14:26:40+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/auth.html?type=group_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0150s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `xs_auth_group`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,6,7,8,9) )  [ RunTime:0.0008s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,5,6,7,8,9) )  [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0005s ]
+
+[ 2017-10-11T14:26:57+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/authDepart.html?type=depart_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0141s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_teacher_department` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xs_teacher_department`  [ RunTime:0.0004s ]
+
+[ 2017-10-11T14:26:58+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/authDepart.html?type=rules_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0129s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `xs_auth_rule`  [ RunTime:0.0006s ]
+
+[ 2017-10-11T14:27:22+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =1104 or xs_mail.mail_to_id =33 ) ORDER BY xs_mail.mail_add_time desc  [ RunTime:0.0010s ]
+
+[ 2017-10-11T14:27:39+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =1104 or xs_mail.mail_to_id =33 ) ORDER BY xs_mail.mail_add_time desc  [ RunTime:0.0009s ]
+
+[ 2017-10-11T14:28:13+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0118s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0011s ]
+
+[ 2017-10-11T14:28:19+08:00 ] 127.0.0.1 /office/index.php/Home/reimburse/timeLine.html?id=3
+ERR: 非法操作:timeLine
+
+[ 2017-10-11T14:28:33+08:00 ] 127.0.0.1 /office/index.php/Home/reimburse/timeLine.html?id=2
+ERR: 非法操作:timeLine
+
+[ 2017-10-11T14:28:57+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0016s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0097s ]
+
+[ 2017-10-11T14:29:22+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-10-11T14:29:23+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0137s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0005s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0085s ]
+
+[ 2017-10-11T14:29:29+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0009s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-10-11T14:29:30+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0008s ]
+
+[ 2017-10-11T14:29:32+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0005s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-10-11T14:31:12+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/auth.html?type=group_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0032s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xs_auth_group`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,6,7,8,9) )  [ RunTime:0.0333s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0123s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,5,6,7,8,9) )  [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0002s ]
+
+[ 2017-10-11T14:32:28+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/index.html
+ERR: 1048:Column 'declare_content' cannot be null
+ [ SQL语句 ] : INSERT INTO `xs_declare` (`declare_title`,`declare_content`,`teacher_id`,`add_time`,`declare_attachment`) VALUES ('1104',NULL,'1104','1507703548','')
+
+[ 2017-10-11T14:43:01+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0148s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0006s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0186s ]
+
+[ 2017-10-11T14:43:03+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_declare_progress` [ RunTime:0.0047s ]
+ERR: 1366:Incorrect string value: '\xE5\x88\x98\xE8\x89\xAF...' for column '1_check' at row 3
+ [ SQL语句 ] : UPDATE `xs_declare_progress` SET `declare_state`='1',`1_check`='1104-刘良富-33',`1_time`='1507704183' WHERE ( declare_id =6 )
+ERR: 1366:Incorrect string value: '\xE5\x88\x98\xE8\x89\xAF...' for column '1_check' at row 3
+ [ SQL语句 ] : UPDATE `xs_declare_progress` SET `declare_state`='1',`1_check`='1104-刘良富-33',`1_time`='1507704183' WHERE ( declare_id =6 )
+
+[ 2017-10-11T14:43:08+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_declare_progress` [ RunTime:0.0006s ]
+ERR: 1366:Incorrect string value: '\xE5\x88\x98\xE8\x89\xAF...' for column '1_check' at row 3
+ [ SQL语句 ] : UPDATE `xs_declare_progress` SET `declare_state`='1',`1_check`='1104-刘良富-33',`1_time`='1507704188' WHERE ( declare_id =6 )
+ERR: 1366:Incorrect string value: '\xE5\x88\x98\xE8\x89\xAF...' for column '1_check' at row 3
+ [ SQL语句 ] : UPDATE `xs_declare_progress` SET `declare_state`='1',`1_check`='1104-刘良富-33',`1_time`='1507704188' WHERE ( declare_id =6 )
+
+[ 2017-10-11T14:45:08+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0007s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-10-11T14:46:01+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0067s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0066s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_declare_progress` [ RunTime:0.0015s ]
+SQL: UPDATE `xs_declare_progress` SET `declare_state`='1',`1_check`='1104',`1_time`='1507704361' WHERE ( declare_id =6 ) [ RunTime:0.0857s ]
+
+[ 2017-10-11T14:46:01+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0182s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0011s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-10-11T14:46:32+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0141s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0020s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0180s ]
+
+[ 2017-10-11T14:47:52+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0057s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.2842s ]
+
+[ 2017-10-11T14:49:23+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0103s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0300s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` INNER JOIN xs_teacher_department d on xs_teacher.teacher_department=d.department_id    [ RunTime:0.0330s ]
+

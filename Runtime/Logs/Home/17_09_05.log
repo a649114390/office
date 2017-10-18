@@ -1,0 +1,1602 @@
+[ 2017-09-05T09:20:00+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0007s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  ORDER BY xs_declare.add_time desc  [ RunTime:0.0009s ]
+
+[ 2017-09-05T09:20:04+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0009s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+
+[ 2017-09-05T09:21:27+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0009s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+
+[ 2017-09-05T09:21:34+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc' at line 1
+ [ SQL语句 ] : SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =%d or xs_mail.mail_to_id =%d ) ORDER BY xs_mail.mail_add_time desc 
+
+[ 2017-09-05T09:27:02+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =1128 or xs_mail.mail_to_id =0 ) ORDER BY xs_mail.mail_add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T09:27:45+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1136 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-09-05T09:27:57+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/sendMail.html?mail=recipient
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_teacher` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xs_teacher` WHERE ( teacher_id=1136 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-09-05T09:36:53+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001724s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001878s ]
+NOTIC: [8] Undefined variable: title /var/www/html/office/Runtime/Cache/Home/2ce9cbf129bb03c7dbd8a55b32eccae5.php 第 284 行.
+NOTIC: [8] Undefined variable: title_small /var/www/html/office/Runtime/Cache/Home/2ce9cbf129bb03c7dbd8a55b32eccae5.php 第 285 行.
+NOTIC: [8] Undefined variable: btn_flag /var/www/html/office/Runtime/Cache/Home/2ce9cbf129bb03c7dbd8a55b32eccae5.php 第 439 行.
+NOTIC: [8] Undefined variable: register_flag /var/www/html/office/Runtime/Cache/Home/2ce9cbf129bb03c7dbd8a55b32eccae5.php 第 488 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-09-05T10:11:58+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0004s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  ORDER BY xs_declare.add_time desc  [ RunTime:0.1653s ]
+
+[ 2017-09-05T10:16:34+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0006s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  ORDER BY xs_declare.add_time desc  [ RunTime:0.0023s ]
+
+[ 2017-09-05T10:37:18+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =1128 or xs_mail.mail_to_id =0 ) ORDER BY xs_mail.mail_add_time desc  [ RunTime:0.0018s ]
+
+[ 2017-09-05T10:37:20+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: Class 'Home\Controller\Auth' not found
+
+[ 2017-09-05T10:37:46+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-09-05T13:20:08+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2017-09-05T14:25:24+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-09-05T14:25:36+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-09-05T14:26:54+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2017-09-05T14:28:48+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-09-05T14:29:37+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2017-09-05T14:31:20+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.reimburse_title' in 'field list'
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_title,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:55+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:56+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:56+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:57+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:57+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:31:58+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: 1054:Unknown column 'xs_reimburse.add_time' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:33:16+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-09-05T14:35:32+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2017-09-05T14:47:53+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-09-05T14:48:06+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-09-05T14:49:22+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-09-05T14:49:53+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+ERR: 1054:Unknown column 'xs_reimburse.reimburse_title' in 'field list'
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_title,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1054:Unknown column 'xs_reimburse.reimburse_title' in 'field list'
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_title,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:50:01+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+ERR: 1054:Unknown column 'xs_reimburse.reimburse_title' in 'field list'
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_title,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1054:Unknown column 'xs_reimburse.reimburse_title' in 'field list'
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_title,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T14:51:22+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0008s ]
+
+[ 2017-09-05T14:51:36+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0020s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0022s ]
+
+[ 2017-09-05T14:55:53+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T14:55:58+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T15:00:35+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0010s ]
+
+[ 2017-09-05T15:07:02+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:08:30+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:11:26+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0009s ]
+
+[ 2017-09-05T15:12:35+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0003s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:12:48+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:13:12+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0011s ]
+
+[ 2017-09-05T15:13:57+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0003s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0022s ]
+
+[ 2017-09-05T15:14:19+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T15:14:19+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.1572s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_declare.teacher_id = 1128 ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0449s ]
+
+[ 2017-09-05T15:14:30+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0015s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T15:20:07+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0003s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T15:26:32+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0512s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0185s ]
+
+[ 2017-09-05T15:26:38+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0121s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T15:26:41+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0014s ]
+
+[ 2017-09-05T15:28:30+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html
+ERR: Class 'Home\Controller\Auth' not found
+
+[ 2017-09-05T15:28:58+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1128' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse.teacher_id = 1128 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0007s ]
+
+[ 2017-09-05T15:29:04+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0015s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T15:29:36+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596576','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596576','','1104')
+
+[ 2017-09-05T15:29:48+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0007s ]
+
+[ 2017-09-05T15:29:54+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596594','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596594','','1104')
+
+[ 2017-09-05T15:32:57+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0009s ]
+
+[ 2017-09-05T15:32:59+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596779','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596779','','1104')
+
+[ 2017-09-05T15:33:04+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596784','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596784','','1104')
+
+[ 2017-09-05T15:33:58+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596838','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596838','','1104')
+
+[ 2017-09-05T15:34:50+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0139s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0021s ]
+
+[ 2017-09-05T15:34:52+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596892','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596892','','1104')
+
+[ 2017-09-05T15:35:42+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T15:35:44+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596944','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596944','','1104')
+
+[ 2017-09-05T15:35:52+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0010s ]
+
+[ 2017-09-05T15:35:54+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /var/www/html/office/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596954','','1104')
+ERR: 1364:Field 'reimburse_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `xs_reimburse` (`add_time`,`reimburse_attachment`,`teacher_id`) VALUES ('1504596954','','1104')
+
+[ 2017-09-05T15:39:45+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0008s ]
+
+[ 2017-09-05T15:39:47+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: rs2 /var/www/html/office/Home/Controller/ReimburseController.class.php 第 83 行.
+
+[ 2017-09-05T15:39:47+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0014s ]
+
+[ 2017-09-05T15:39:53+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0010s ]
+
+[ 2017-09-05T15:40:04+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: rs2 /var/www/html/office/Home/Controller/ReimburseController.class.php 第 83 行.
+
+[ 2017-09-05T15:40:04+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0011s ]
+
+[ 2017-09-05T15:40:24+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0014s ]
+
+[ 2017-09-05T15:40:26+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse_progress` [ RunTime:0.0004s ]
+SQL: UPDATE `xs_reimburse_progress` SET `reimburse_state`='1',`1_check`='1104-刘良富-33',`1_time`='1504597226' WHERE ( reimburse_id =3 ) [ RunTime:0.1054s ]
+
+[ 2017-09-05T15:40:26+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0008s ]
+
+[ 2017-09-05T15:44:34+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T15:44:39+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T15:44:58+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse.money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T15:47:40+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JO' at line 2
+ [ SQL语句 ] : SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money
+                                    xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc 
+
+[ 2017-09-05T15:48:32+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0024s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0026s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0510s ]
+
+[ 2017-09-05T15:51:02+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:51:10+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0015s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse_progress` [ RunTime:0.0033s ]
+SQL: UPDATE `xs_reimburse_progress` SET `reimburse_state`='1',`1_check`='1104-刘良富-33',`1_time`='1504597870' WHERE ( reimburse_id =2 ) [ RunTime:0.0347s ]
+
+[ 2017-09-05T15:51:10+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T15:58:52+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T15:59:16+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=fail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse_progress` [ RunTime:0.0011s ]
+SQL: UPDATE `xs_reimburse_progress` SET `reimburse_state`='-1' WHERE ( reimburse_id = 1 ) [ RunTime:0.1385s ]
+
+[ 2017-09-05T15:59:16+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T16:04:45+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=form?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0017s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-09-05T16:07:43+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0114s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0015s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0009s ]
+
+[ 2017-09-05T16:07:50+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0012s ]
+
+[ 2017-09-05T16:08:19+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0012s ]
+
+[ 2017-09-05T16:08:23+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0018s ]
+
+[ 2017-09-05T16:09:02+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0016s ]
+
+[ 2017-09-05T16:09:15+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0134s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0018s ]
+
+[ 2017-09-05T16:09:47+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T16:10:00+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T16:10:37+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0007s ]
+
+[ 2017-09-05T16:11:21+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0015s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T16:11:28+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0014s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0014s ]
+
+[ 2017-09-05T16:11:34+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T16:11:57+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0082s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T16:12:12+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0030s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0013s ]
+
+[ 2017-09-05T16:12:16+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0007s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0011s ]
+
+[ 2017-09-05T16:12:34+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0003s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0055s ]
+
+[ 2017-09-05T16:12:36+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0017s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: file /var/www/html/office/Home/Controller/ReimburseController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0012s ]
+
+[ 2017-09-05T16:13:18+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0011s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:13:35+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0014s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:14:07+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0021s ]
+
+[ 2017-09-05T16:14:22+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0036s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0006s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:14:47+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0016s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0007s ]
+
+[ 2017-09-05T16:14:48+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:15:05+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0022s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:15:06+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T16:25:21+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0083s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0021s ]
+
+[ 2017-09-05T16:25:44+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0005s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0012s ]
+
+[ 2017-09-05T16:27:13+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0015s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T16:27:25+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/www.baidu.com
+ERR: 非法操作:www.baidu.com
+
+[ 2017-09-05T16:27:29+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0005s ]
+
+[ 2017-09-05T16:44:10+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0018s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0328s ]
+
+[ 2017-09-05T16:44:11+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0017s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T16:44:17+08:00 ] 127.0.0.1 /office/index.php/Home/reimburse/timeLine.html?id=15
+ERR: 非法操作:timeLine
+
+[ 2017-09-05T16:44:25+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0233s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0008s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0006s ]
+
+[ 2017-09-05T16:45:13+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0018s ]
+
+[ 2017-09-05T16:47:26+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.1321s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0164s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0008s ]
+
+[ 2017-09-05T16:47:27+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0082s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1104' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0013s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_teacher.teacher_department="33" ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0011s ]
+
+[ 2017-09-05T17:07:31+08:00 ] 127.0.0.1 /office/index.php/Home/Index/s
+ERR: 非法操作:s
+
+[ 2017-09-05T17:07:37+08:00 ] 127.0.0.1 /office/index.php/Home/Index/s
+ERR: 非法操作:s
+
+[ 2017-09-05T17:07:41+08:00 ] 127.0.0.1 /office/index.php/Home/Index/s
+ERR: 非法操作:s
+
+[ 2017-09-05T17:07:46+08:00 ] 127.0.0.1 /office/index.php/Home/Index/s
+ERR: 非法操作:s
+
+[ 2017-09-05T17:07:54+08:00 ] 127.0.0.1 /office/index.php/Home/Index/s
+ERR: 非法操作:s
+
+[ 2017-09-05T17:15:40+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0084s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0010s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0791s ]
+
+[ 2017-09-05T17:15:54+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse_progress` [ RunTime:0.0005s ]
+SQL: UPDATE `xs_reimburse_progress` SET `reimburse_state`='2',`2_check`='1114-财务-11',`2_time`='1504602954' WHERE ( reimburse_id =3 ) [ RunTime:0.1157s ]
+
+[ 2017-09-05T17:15:54+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0048s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0004s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0004s ]
+
+[ 2017-09-05T17:18:28+08:00 ] 127.0.0.1 /office/index.php/Home/Declare/info.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0028s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_declare` [ RunTime:0.0444s ]
+SQL: SELECT xs_declare.id,xs_declare.teacher_id,xs_declare.declare_title,xs_declare.add_time,xs_declare.declare_attachment,xs_teacher.teacher_name,xs_teacher.teacher_name,xs_declare_progress.declare_state FROM `xs_declare` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_declare.teacher_id INNER JOIN xs_declare_progress on  xs_declare_progress.declare_id=xs_declare.id  WHERE ( xs_declare_progress.declare_state  >= 1 ) ORDER BY xs_declare.add_time desc  [ RunTime:0.0384s ]
+
+[ 2017-09-05T17:27:33+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0031s ]
+
+[ 2017-09-05T17:28:20+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=fail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse_progress` [ RunTime:0.0019s ]
+SQL: UPDATE `xs_reimburse_progress` SET `reimburse_state`='-1',`fail_reason`='21114-1504603700-122312313' WHERE ( reimburse_id = 2 ) [ RunTime:0.0634s ]
+
+[ 2017-09-05T17:28:20+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0009s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0036s ]
+
+[ 2017-09-05T17:50:47+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0007s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0023s ]
+
+[ 2017-09-05T18:00:39+08:00 ] 127.0.0.1 /office/index.php/Home/Reimburse/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0262s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0092s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xs_reimburse` [ RunTime:0.0015s ]
+SQL: SELECT xs_reimburse.id,xs_reimburse.teacher_id,xs_reimburse.reimburse_name,xs_reimburse.add_time,xs_reimburse.reimburse_attachment,xs_reimburse.reimburse_money,xs_teacher.teacher_name,xs_teacher.teacher_id,xs_reimburse_progress.reimburse_state FROM `xs_reimburse` INNER JOIN xs_teacher  on xs_teacher.teacher_id = xs_reimburse.teacher_id INNER JOIN xs_reimburse_progress on  xs_reimburse_progress.reimburse_id=xs_reimburse.id  WHERE ( xs_reimburse_progress.reimburse_state  >= 1 ) ORDER BY xs_reimburse.add_time desc  [ RunTime:0.0027s ]
+
+[ 2017-09-05T18:00:46+08:00 ] 127.0.0.1 /office/index.php/Home/Mail/index.html?type=data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1114' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xs_mail` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `xs_mail` INNER JOIN xs_teacher on xs_teacher.teacher_id = xs_mail.mail_from_id  WHERE ( xs_mail.mail_to_id =1114 or xs_mail.mail_to_id =11 ) ORDER BY xs_mail.mail_add_time desc  [ RunTime:0.0606s ]
+

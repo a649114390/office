@@ -1,0 +1,31 @@
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">站内信</h3>
+    </div>
+
+        <div class="box-body">
+
+                <p class="text-blank">{$info.mail_title}</p>
+                <p class="text-blank">发件人：{$info['teacher_name']}</p>
+                <p class="text-blank">时间：<?php echo date('Y-m-d H:i:s',$info['mail_add_time'])?></p>
+            <div id="myEditor" style="height: 300px;" name="content">
+                {$info['mail_content']}
+            </div>
+
+
+        </div>
+        <div class="box-footer">
+            <button type="button" class="btn btn-primary" onclick="history.back();">返回</button>
+        </div>
+
+    <!-- /.box-body -->
+</div>
+
+<script>
+
+    var um = UM.getEditor('myEditor');
+    UM.getEditor('myEditor').setDisabled('fullscreen');
+    disableBtn("enable");
+    //    群发开关
+
+</script>

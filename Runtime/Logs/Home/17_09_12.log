@@ -1,0 +1,39 @@
+[ 2017-09-12T13:08:35+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/authDepart.html?type=depart_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1113' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_teacher_department` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `xs_teacher_department`  [ RunTime:0.0002s ]
+
+[ 2017-09-12T13:08:35+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/authDepart.html?type=rules_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1113' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xs_auth_rule`  [ RunTime:0.0002s ]
+
+[ 2017-09-12T13:08:36+08:00 ] 127.0.0.1 /office/index.php/Home/Teacher/auth.html?type=group_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group_access` [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM xs_auth_group_access a INNER JOIN xs_auth_group g on a.group_id=g.id  WHERE ( a.uid='1113' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`name` FROM `xs_auth_rule` WHERE `id` IN ('1','2','3','4','6','7','8','9') AND `type` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xs_auth_group` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xs_auth_group`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `xs_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,6,7,8,9) )  [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,5,6,7,8,9) )  [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `xs_auth_rule` WHERE ( id in(1,2,3,4,6,7,8,9) )  [ RunTime:0.0002s ]
+

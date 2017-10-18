@@ -1,0 +1,205 @@
+
+    <div class="row">
+        <div class="col-xs-12">
+
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">角色信息</h3>
+                        <div style="float: right">
+                            <a href="javascript:;" class="btn btn-default" onclick="add_role()"><i class="im-plus"></i> 添加</a>
+                            <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+                            <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+                        </div>
+                    </div>
+                    <div class="box-body" style="display: none" id="role">
+                        <form method="post" enctype="multipart/form-data">
+                            <table class="table table-bordered table-striped dataTable table-hover " >
+                                <thead>
+                                <tr>
+                                    <td>角色名</td><td>权限</td><td>操作</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder="名称" name="name" id="name"></td>
+                                    <td>
+
+                                        <select class="form-control select2 select2-hidden-accessible" multiple style="width: 100%;"
+                                                tabindex="-1" aria-hidden="true" id="role_select" name="role_select">
+                                            <foreach name="rule" item="v" key="k">
+                                                <option value="{$v.id}" >{$v.title}</option>
+                                            </foreach>
+                                        </select>
+                                    </td>
+                                    <td><button type='button' class='edit-btn fa fa-user-plus btn btn-primary' id="role_edit">新建</button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="box-body">
+                        <table id="table_role" class="table table-bordered table-striped dataTable table-hover "></table>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+
+
+
+<script>
+    var table_role;
+    $(document).ready(function() {
+        $("#role_select").select2({
+            theme: "bootstrap"
+        });
+
+    });
+    $(document).ready( function () {
+
+        table_role = $('#table_role').DataTable({
+            "ajax": {
+                "url": "__SELF__?type=group_data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "id",
+                    "title": "选中",
+
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 18px;width: 18px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+                {"data": "title", "title": "角色", "sClass": "text-center", "defaultContent": ""},
+                {"data": "rules", "title": "权限ids", "sClass": "text-center", "defaultContent": ""},
+                {"data": "rules_name", "title": "权限名字", "defaultContent": ""},
+
+                {
+                    "data": '', "title": "操作", "sClass": "text-center", "defaultContent":
+                "<div class='btn-group'>"+
+                "<button type='button' class='edit-btn fa  fa-search-plus btn btn-info'  id='edit1'>修改</button>"+
+                "<button type='button' class='delete-btn fa fa-trash-o btn btn-danger' style='margin-left: 5px' id='delete1' >删除</button>"+
+                "</div>"
+
+
+                }
+
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table_role tbody").on("click","#edit1",function(){
+            $('#add_reimburse').slideDown();
+            var row=table_role.row($(this).parents("tr"));
+            var data=row.data();
+            var ids = data['rules'].split(',');
+            $('#role').slideDown('slow');
+            $('#role_select').val(ids).trigger("change");
+            $('#name').val(data['title']);
+            $('#role_edit').text('修改');
+
+        });
+
+        $("#table_role tbody").on("click","#delete1",function(){
+
+            var row=table_role.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "{:U('Teacher/index')}?type=del",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {'data': id}
+                    })
+                        .done(function(msg) {
+                            if (msg === 1) {
+                                table_role.row( $("#"+id).parents('tr') ).remove().draw();
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+
+
+
+
+        });
+
+    });
+
+    function add_role() {
+        $('#role_select').val(1).trigger("change");
+        $('#name').val('');
+        $('#role_edit').text('增加');
+        $('#role').slideToggle('slow');
+    }
+
+
+</script>

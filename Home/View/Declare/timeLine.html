@@ -1,0 +1,81 @@
+
+<ul class="timeline">
+
+    <!-- timeline time label -->
+    <li class="time-label">
+        <span class="bg-blue" title="发布时间">
+
+          <?php echo date('Y-m-d',$declare_info['add_time']); ?>
+        </span>
+    </li>
+    <!-- /.timeline-label -->
+
+    <!-- timeline item -->
+    <li>
+        <i class="fa fa-user bg-aqua"></i>
+
+        <div class="timeline-item">
+            <span class="time" title="详细时间"><i class="fa fa-clock-o"></i><?php echo date('Y-m-d H:i:s',$declare_info['add_time']); ?></span>
+
+            <h3 class="timeline-header" title="标题">{$declare_info['declare_title']}</h3>
+            <div class="timeline-body">
+              {$declare_info['declare_content']}
+            </div>
+        </div>
+    </li>
+    <neq name="declare_info['declare_state']" value="-1">
+        <for start="1" end="$declare_info['declare_state']+1">
+            <li class="time-label">
+            <span class="bg-blue" title="审批时间"><?php echo date('Y-m-d',$declare_info[$i.'_time']); ?>
+            </span>
+            </li>
+            <li>
+                <i class="fa fa-user bg-aqua"></i>
+                <div class="timeline-item">
+                    <span class="time"><i class="fa fa-clock-o"></i><?php echo date('Y-m-d H:i:s',$declare_info[$i.'_time']); ?></span>
+
+                    <h3 class="timeline-header no-border">教工号为<?php echo $declare_info[$i.'_check']; ?>的负责人,同意了你的申请</h3>
+                </div>
+            </li>
+        </for>
+    <else/>
+        <for start="1" end="$declare_info['declare_fail_reason'][0]+1">
+            <eq name="i" value="$declare_info['declare_fail_reason'][0]">
+                <li class="time-label">
+                <span class="bg-red" title="审批时间"><?php echo date('Y-m-d',$declare_info[$i.'_time']); ?></span>
+                </li>
+                <li>
+                    <i class="fa fa-user bg-aqua"></i>
+                    <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i><?php echo date('Y-m-d H:i:s',$declare_info['declare_fail_reason'][2]); ?></span>
+                        <h3 class="timeline-header no-border">教工号为{$declare_info['declare_fail_reason'][1]}的负责人,驳回了你的申请</h3>
+                        <div class="timeline-body">
+                            {$declare_info['declare_fail_reason'][3]}
+                        </div>
+                    </div>
+                </li>
+            <else/>
+
+                <li class="time-label">
+                    <span class="bg-blue" title="审批时间"><?php echo date('Y-m-d',$declare_info[$i.'_time']); ?></span>
+                </li>
+                <li>
+                    <i class="fa fa-user bg-aqua"></i>
+                    <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i><?php echo date('Y-m-d H:i:s',$declare_info[$i.'_time']); ?></span>
+
+                        <h3 class="timeline-header no-border">教工号为<?php echo $declare_info[$i.'_check']; ?>的负责人,同意了你的申请</h3>
+                    </div>
+                </li>
+            </eq>
+        </for>
+    </neq>
+
+    <!-- END timeline item -->
+    <li>
+        <i class="fa fa-clock-o bg-gray"></i>
+    </li>
+
+
+</ul>
+

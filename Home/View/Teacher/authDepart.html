@@ -1,0 +1,409 @@
+<div class="row">
+    <div class="col-md-6">
+
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">部门信息</h3>
+                <div style="float: right">
+                    <a href="#" class="btn btn-default" onclick="add_department()"><i class="im-plus"></i> 添加</a>
+                    <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+                    <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="table_depart" class="table table-bordered table-striped dataTable table-hover "></table>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-6">
+
+
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">权限信息</h3>
+                <div style="float: right">
+                    <a href="#" class="btn btn-default" onclick="showReimburse()"><i class="im-plus"></i> 添加</a>
+                    <a href="#" class="btn btn-default" onclick="checkAll()"><i class="im-plus"></i> 全选</a>
+                    <a href="#" class="btn btn-default " onclick="deleteAll()"><i class="im-plus fa fa-trash"></i> 选中删除</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="table_ruth" class="table table-bordered table-striped dataTable table-hover"></table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    var table_depart;
+    $(document).ready( function () {
+        table_depart = $('#table_depart').DataTable({
+            "ajax": {
+                "url": "{:U('Teacher/authDepart')}?type=depart_data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "department_id",
+                    "title": "选中",
+                    "width": "10%",
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 18px;width: 18px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+                {"data": "department_id", "title": "编号", "sClass": "text-center", "defaultContent": ""},
+                {"data": "department", "title": "教工号", "sClass": "text-center", "defaultContent": ""},
+
+                {
+                    "data": '', "title": "操作", "sClass": "text-center", "defaultContent":
+                "<div class='btn-group'>"+
+                "<button type='button' class='edit-btn fa  fa-search-plus btn btn-info'  id='edit'>修改</button>"+
+                "<button type='button' class='delete-btn fa fa-trash-o btn btn-danger' style='margin-left: 5px' id='delete' >删除</button>"+
+                "</div>"
+
+
+                }
+
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table_depart tbody").on("click","#edit",function(){
+            var row=table_depart.row($(this).parents("tr"));
+            var data=row.data();
+            alert(1);
+            swal({
+                    title: "修改",
+                    text: "请输入部门的新名称",
+                    type: "input",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: "slide-from-top",
+                    inputPlaceholder: "部门名称"
+                },
+                function (inputValue) {
+                    if (inputValue === false) return false;
+
+                    if (inputValue === "") {
+                        swal.showInputError("不能为空");
+                        return false
+                    }
+                    $.ajax({
+                        url:"{:U('Teacher/authDepart')}?type=edit_depart",
+                        type:"post",
+                        dataType:"json",
+                        data:{'name':inputValue,'id':data['department_id']}
+
+                    })
+                        .done(function (msg) {
+                            if (msg === 0){
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }else {
+                                table_depart.ajax.reload();
+                                swal("成功", '操作成功！', "success");
+                            }
+                        })
+                        .fail(function () {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应,请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+        });
+
+        $("#table_depart tbody").on("click","#delete",function(){
+
+            var row=table_depart.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['department_id'];
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "{:U('Teacher/authDepart')}?type=del_depart",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {'data': id}
+                    })
+                        .done(function(msg) {
+                            if (msg === 1) {
+                                table_depart.row( $("#"+id).parents('tr') ).remove().draw();
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+
+
+
+
+        });
+
+
+
+
+
+    });
+
+    function add_department() {
+        swal({
+                title: "新增部门",
+                text: "请输入部门的名称",
+                type: "input",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                animation: "slide-from-top",
+                inputPlaceholder: "部门名称"
+            },
+            function (inputValue) {
+                if (inputValue === false) return false;
+
+                if (inputValue === "") {
+                    swal.showInputError("不能为空");
+                    return false
+                }
+                $.ajax({
+                    url:"{:U('Teacher/authDepart')}?type=add_depart",
+                    type:"post",
+                    dataType:"json",
+                    data:{'name':inputValue}
+
+                })
+                    .done(function (msg) {
+                        if (msg == 0){
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        }else{
+                            table_depart.ajax.reload();
+                            swal("成功", '操作成功！', "success");
+                        }
+                    })
+                    .fail(function () {
+                        swal({
+                            title: "错误!",
+                            text: "服务器未正常响应,请重试",
+                            type: "error",
+                            confirmButtonText: "知道了"
+                        });
+                    });
+            });
+
+
+
+
+    }
+</script>
+
+<script>
+    var table_ruth;
+    $(document).ready( function () {
+        table_ruth = $('#table_ruth').DataTable({
+            "ajax": {
+                "url": "__SELF__?type=rules_data",
+                //"dataSrc": "data",//默认为data
+                "type": "post",
+                "error": function () {
+                    swal({
+                        title: "错误!",
+                        text: "服务器未正常响应，请重试",
+                        type: "error",
+                        confirmButtonText: "知道了"
+                    });
+                }
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": false,
+            "info": true,
+            "autoWidth": true,
+            "columns": [
+                {
+                    "data": "id",
+                    "title": "选中",
+
+                    "defaultContent": "", "mRender": function (data, type, full) {
+                    return "<label>" +
+                        "<input type='checkbox' name='box' style='height: 18px;width: 18px;' value='" + data + "' id='" + data + "'>" +
+                        "</label>";
+                }
+                },
+                {"data": "id", "title": "编号", "sClass": "text-center", "defaultContent": ""},
+                {"data": "title", "title": "名字", "sClass": "text-center", "defaultContent": ""},
+
+                {
+                    "data": '', "title": "操作", "sClass": "text-center", "defaultContent":
+                "<div class='btn-group'>"+
+                "<button type='button' class='edit-btn fa  fa-search-plus btn btn-info'  id='edit1'>修改</button>"+
+                "<button type='button' class='delete-btn fa fa-trash-o btn btn-danger' style='margin-left: 5px' id='delete1' >删除</button>"+
+                "</div>"
+
+
+                }
+
+            ],
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
+        });
+
+        $("#table_ruth tbody").on("click","#edit1",function(){
+            $('#add_reimburse').slideDown();
+            var row=table_ruth.row($(this).parents("tr"));
+            var data=row.data();
+
+        });
+
+        $("#table_ruth tbody").on("click","#delete1",function(){
+
+            var row=table_ruth.row($(this).parents("tr"));
+            var data=row.data();
+            var id = data['id'];
+            swal({
+                    title: "确定删除吗？",
+                    text: "你将无法恢复！",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除！",
+                    closeOnConfirm: false
+                },
+                function(){
+                    $.ajax({
+                        url: "{:U('Teacher/authDepart')}?type=del",
+                        type: 'post',
+                        dataType: 'json',
+                        data: {'data': id}
+                    })
+                        .done(function(msg) {
+                            if (msg === 1) {
+                                table_ruth.row( $("#"+id).parents('tr') ).remove().draw();
+                                swal("成功", '删除成功！', "success");
+                            }else{
+                                swal({
+                                    title: "错误!",
+                                    text: "服务器未正常响应，请重试",
+                                    type: "error",
+                                    confirmButtonText: "知道了"
+                                });
+                            }
+                        })
+                        .fail(function() {
+                            swal({
+                                title: "错误!",
+                                text: "服务器未正常响应，请重试",
+                                type: "error",
+                                confirmButtonText: "知道了"
+                            });
+                        });
+                });
+
+
+
+
+        });
+
+
+
+
+
+    });
+
+</script>
